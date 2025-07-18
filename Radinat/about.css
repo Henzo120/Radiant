@@ -1,0 +1,174 @@
+/* Modern About Section CSS */
+.about-section {
+  padding: 5rem 2rem;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.about-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  border-left: 4px solid transparent;
+}
+
+.mission-card {
+  border-left-color: #3498db;
+}
+
+.vision-card {
+  border-left-color: #9b59b6;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+  z-index: -1;
+}
+
+.about-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  transition: transform 0.4s ease;
+}
+
+.about-card:hover .card-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.mission-card .card-icon {
+  color: #3498db;
+}
+
+.vision-card .card-icon {
+  color: #9b59b6;
+}
+
+.about-card h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.about-story {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  grid-column: span 2;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.about-story h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.about-story p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.story-highlights {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.story-highlights li {
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+}
+
+.story-highlights i {
+  margin-right: 0.8rem;
+  color: #27ae60;
+  font-size: 1.2rem;
+}
+
+.learn-more-btn {
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+/* Animation Classes */
+.about-card.animate,
+.about-story.animate {
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-story {
+    grid-column: span 1;
+  }
+  
+  .about-card,
+  .about-story {
+    opacity: 1;
+    transform: none !important;
+  }
+}

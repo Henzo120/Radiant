@@ -1,0 +1,221 @@
+/* ===== MOBILE-FIRST CONTACT SECTION ===== */
+.contact-section {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+  position: relative;
+  padding-bottom: 5rem; /* Space for emergency button */
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Map Container */
+.map-container {
+  order: 1; /* Map first on mobile */
+}
+
+.map-wrapper {
+  height: 250px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+}
+
+/* Address Styles */
+.address {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.address p {
+  margin: 0.5rem 0;
+}
+
+.address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.address i {
+  margin-right: 0.5rem;
+  color: #3498db;
+  width: 1rem;
+  text-align: center;
+}
+
+/* Form Container */
+.form-container {
+  order: 2;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Emergency Button */
+.emergency-contact {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.emergency-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e74c3c;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(231, 76, 60, 0.3);
+}.emergency-btn.blink {
+  animation: blink-effect 1.5s infinite alternate;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes blink-effect {
+  0%, 100% {
+    background-color: #e74c3c;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+  }
+  50% {
+    background-color: #ff6b5b;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.9);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+/* Mobile-specific blink adjustment */
+@media (max-width: 768px) {
+  .emergency-btn.blink {
+    animation: blink-effect-mobile 1.5s infinite alternate;
+  }
+  
+  @keyframes blink-effect-mobile {
+    0%, 100% {
+      background-color: #e74c3c;
+      box-shadow: 0 0 5px rgba(231, 76, 60, 0.8);
+    }
+    50% {
+      background-color: #ff6b5b;
+      box-shadow: 0 0 15px rgba(231, 76, 60, 0.9);
+    }
+  }
+}
+/* ===== TABLET/DESKTOP STYLES ===== */
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .map-container {
+    order: 1;
+  }
+  
+  .form-container {
+    order: 2;
+  }
+  
+  .map-wrapper {
+    height: 300px;
+  }
+  
+  .emergency-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Animation for larger screens only */
+@media (min-width: 992px) {
+  .map-container {
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  .form-container {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  
+  .animate {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+}

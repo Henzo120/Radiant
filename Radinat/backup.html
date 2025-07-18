@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced Oncology Center provides world-class cancer care with cutting-edge treatments and compassionate specialists dedicated to your health journey.">
+  <meta name="keywords" content="oncology, cancer treatment, chemotherapy, radiation therapy, cancer specialists, oncology center">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Advanced Oncology Center">
+  <meta property="og:title" content="Advanced Oncology Center | World-Class Cancer Care">
+  <meta property="og:description" content="Compassionate, cutting-edge oncology care with leading cancer specialists.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.advancedoncologycenter.com">
+  <meta property="og:image" content="https://www.advancedoncologycenter.com/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>Advanced Oncology Center | World-Class Cancer Care & Treatment</title>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.advancedoncologycenter.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="hero.css" as="style">
+  <link rel="stylesheet" href="about.css">
+
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="hero.css">
+  
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Advanced Oncology Center",
+    "description": "World-class oncology care center specializing in cancer treatment and research",
+    "url": "https://www.advancedoncologycenter.com",
+    "logo": "https://www.advancedoncologycenter.com/images/logo.jpg",
+    "medicalSpecialty": "Oncology",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cancer Treatment Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Chemotherapy"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Radiation Therapy"
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Immunotherapy"
+        }
+      ]
+    }
+  }
+  </script>
+  
+  <style>
+    /* Image slider styles */
+    .hero-image {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    .slider-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      border-radius: 8px;
+    }
+    
+    .slider-image.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="main-header">
+    <a href="#" aria-label="Advanced Oncology Center Home">
+      <img src="Logo.jpg" alt="Advanced Oncology Center Logo" class="logo" width="150" height="40">
+    </a>
+    
+    <nav aria-label="Main navigation">
+      <ul id="nav-menu">
+        <li><a href="#" class="nav-item" aria-current="page">Home</a></li>        
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#services" class="nav-item">Services</a></li>
+        <li><a href="#doctors" class="nav-item">Specialists</a></li>
+        <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta nav-item">Emergency</a></li>
+      </ul>
+      <button class="menu-toggle" id="mobile-menu" aria-label="Mobile menu toggle" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-container" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <h1 id="hero-heading">Your Health, <span>Our Priority</span></h1>
+      <p class="subtitle">World-class oncology care designed for you.</p>
+      
+      <div class="cta-buttons cssanimation ca__fx-hangDropLeft">
+        <button class="primary-btn" aria-label="Book an appointment">Book Appointment</button>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <!-- Image slider -->
+      <img src="image1.jpg" alt="Oncology specialist consulting with patient" class="slider-image active" width="600" height="400" loading="lazy">
+      <img src="image2.jpg" alt="Advanced medical equipment in our facility" class="slider-image" width="600" height="400" loading="lazy">
+      <img src="image3.jpg" alt="Compassionate nursing care at our center" class="slider-image" width="600" height="400" loading="lazy">
+      <img src="image4.jpg" alt="State-of-the-art treatment room" class="slider-image" width="600" height="400" loading="lazy">
+        </div>
+  </section>
+
+
+
+
+ <!-- About Us Section -->
+  <section class="about-section" aria-labelledby="about-heading">
+    <div class="about-container">
+      <div class="about-content">
+        <h2 id="about-heading">About Our Oncology Center</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+        <p>Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        <div class="cta-buttons">
+          <a href="#about" class="secondary-btn">Learn More About Us</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="about-image.jpg" alt="Our oncology team discussing patient care" width="600" height="400" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+    
+    mobileMenu.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+      this.querySelector('i').classList.toggle('fa-times');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        mobileMenu.querySelector('i').classList.remove('fa-times');
+        mobileMenu.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Update URL without page jump
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+
+    // Image Slider Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.slider-image');
+      let currentIndex = 0;
+      
+      function showNextImage() {
+        // Hide current image
+        images[currentIndex].classList.remove('active');
+        
+        // Move to next image (loop back to 0 if at end)
+        currentIndex = (currentIndex + 1) % images.length;
+        
+        // Show next image
+        images[currentIndex].classList.add('active');
+      }
+      
+      // Change image every 5 seconds
+      setInterval(showNextImage, 5000);
+      
+      // Initialize the slider animation
+      images[0].classList.add('active');
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    /* Add these new styles below your existing slider styles */
+    
+    /* About Section Styles */
+    .about-section {
+      padding: 80px 5%;
+      background-color: #f9fbfe;
+      position: relative;
+    }
+    
+    .about-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    
+    .about-content {
+      padding-right: 30px;
+    }
+    
+    .about-content h2 {
+      color: var(--dark);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .about-content h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+    }
+    
+    .about-content p {
+      color: var(--text-light);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .about-image {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .about-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    
+    .about-image:hover img {
+      transform: scale(1.03);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 992px) {
+      .about-container {
+        gap: 30px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .about-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .about-content {
+        padding-right: 0;
+        text-align: center;
+      }
+      
+      .about-content h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
